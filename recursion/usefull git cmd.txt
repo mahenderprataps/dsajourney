@@ -1,0 +1,48 @@
+usefull git cmd
+
+1 git --version
+git init
+git add file_name
+git add .
+git commit -m "commit_name"
+git status
+git log
+git log -oneline
+
+-------------------------------
+
+>> want to egnore some to not to track
+
+.gitignore
+
+------------------------------------
+>> want to track empty file
+folder_name
+   inside add .gitkeep
+
+------------------------------------
+Branching
+
+git branch
+git branch new_branch_name
+git switch another_branch_name
+
+HOW TO MERGE THAT BRANCH TO MAIN BRANCH
+git merge branch_name
+s2 press enter
+s3 press esc :wq enter
+
+-----
+git branch -d branch_to_be_delete_name
+
+-----------------short cut that create new branch and auto switch to it------- git switch -c new_branch_name
+
+----understand merge conflit----
+while merging if two person changes diffretly in same file that is merge conflit, at tha time the one review that and make final changes and remove markers thats it
+
+--------------------------------------
+git stash "this wil store or save your current changes into temperly storage that files whic is incompleted"
+git stash pop
+git stash list
+
+
