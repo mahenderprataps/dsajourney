@@ -3,12 +3,12 @@ git config --list
 
 to see all files ls and ls -a
 
-to move in folder cd
+to move in folder/to change directory; cd
 to move out ; cd ..
-to make new directry/folder mkdir
+to make new directry/folder; mkdir
 
 
-usefull git cmd
+----->  usefull git cmd  <-----
 
 
 git --version
@@ -31,16 +31,16 @@ git log -oneline
 folder_name
    inside add .gitkeep
 
-------------------------------------
-Branching
+----------------- Branching -------------------
 
 git branch
 git branch new_branch_name
 git switch another_branch_name
 
-HOW TO MERGE THAT BRANCH TO MAIN BRANCH
-git diff main/ another_branch_name //check differnces
-git merge branch_name
+----- HOW TO MERGE THAT BRANCH TO MAIN BRANCH -----
+
+s0 git diff main/ another_branch_name //check differnces
+s1 git merge branch_name
 s2 press enter
 s3 press esc :wq enter
 
@@ -86,13 +86,13 @@ git rebase main // enter this cmd in second branch not in main
 
 NOW GIT HUB COMMANDS
 
-git clone "paste link"
+git clone "paste link" //to copy content from github to local pc
 
-git push origin main
+git push origin main //to transfer from local to remote ie github
 
-git remote -v
+git remote -v //to check the origin/remote 
 
-git pull
+git pull // to take and all comits and changes till now of another repo
 
 fetch = remote repo ko utarta hai local git mai
 pull = utar kar + working directory mai merge bhi kar deta hai
@@ -105,14 +105,12 @@ by mistake do add + commit and want to back -> git head ~1 #for go one commit ba
 					    -> git reset hard-- "hash code " # go back to prevous commit + delete all changes from vscode too after that commit
 
 make rough copy on other persons code at GitHub to my GitHub
-do simply by fork
+do simply by fork option in github
 
 
 workflow if create repo first at GitHub
 create repo -> clone it in local machine -> changes -> git add -> git commit -> git push origin main -> done
 
 workflow if create files first in local machine
-create_files -> git init -> git add . -> git commit -> create repo at GitHub -> takeoutthat repo into machine_local: git remote add origin "link" -> git remote -v -> git pull origin main -> git push origin main -> main
-
-method2 : vscode -> git pull ori
+create_files -> git init -> git add . -> git commit -> create repo at GitHub -> takeoutthat repo into machine_local: git remote add origin "link" -> git remote -v -> git pull origin main -> git push origin main -> main -> done
 
