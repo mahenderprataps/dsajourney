@@ -1,6 +1,17 @@
+git config --global user.name/ email
+git config --list
+
+to see all files ls and ls -a
+
+to move in folder cd
+to move out ; cd ..
+to make new directry/folder mkdir
+
+
 usefull git cmd
 
-1 git --version
+
+git --version
 git init
 git add file_name
 git add .
@@ -28,9 +39,16 @@ git branch new_branch_name
 git switch another_branch_name
 
 HOW TO MERGE THAT BRANCH TO MAIN BRANCH
+git diff main/ another_branch_name //check differnces
 git merge branch_name
 s2 press enter
 s3 press esc :wq enter
+
+method 2: of merge ie from GitHub through pull request
+
+open GitHub > create pull request > review changes > if all right mere pull request > done
+
+
 
 -----
 git branch -d branch_to_be_delete_name
@@ -45,4 +63,56 @@ git stash "this wil store or save your current changes into temperly storage tha
 git stash pop
 git stash list
 
+-------------------------------------------
+tag in git 2types
+
+git tag
+
+annotated tag -as a comment
+git tag -a v1.0 -m "my realese 1"
+
+lightweight tag -like version 1.2.1
+ git tag v1.1.3
+
+
+-------------------------------------------
+git rebase now
+
+git rebase main // enter this cmd in second branch not in main
+
+
+
+----------git ----------no need now
+
+NOW GIT HUB COMMANDS
+
+git clone "paste link"
+
+git push origin main
+
+git remote -v
+
+git pull
+
+fetch = remote repo ko utarta hai local git mai
+pull = utar kar + working directory mai merge bhi kar deta hai
+
+undo changes
+git reset or git reset file_name // undo if add changes but not commit it yet
+
+by mistake do add + commit and want to back -> git head ~1 #for go one commit back
+					    -> git reset "hash code " # for go back multiple commit back
+					    -> git reset hard-- "hash code " # go back to prevous commit + delete all changes from vscode too after that commit
+
+make rough copy on other persons code at GitHub to my GitHub
+do simply by fork
+
+
+workflow if create repo first at GitHub
+create repo -> clone it in local machine -> changes -> git add -> git commit -> git push origin main -> done
+
+workflow if create files first in local machine
+create_files -> git init -> git add . -> git commit -> create repo at GitHub -> takeoutthat repo into machine_local: git remote add origin "link" -> git remote -v -> git pull origin main -> git push origin main -> main
+
+method2 : vscode -> git pull ori
 
